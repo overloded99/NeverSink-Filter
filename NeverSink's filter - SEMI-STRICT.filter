@@ -432,60 +432,6 @@ Show #$crafting, nonmf %D2
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #------------------------------------
-#   [0211] Chisel recipe items
-#------------------------------------
-# Chisel Recipe: You can sell a 20% hammer + random map for 1 chisel
-
-Show #$chisel, recipes, top %D3
-	Quality = 20
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Magic
-	SetFontSize 38
-	SetTextColor 100 100 255 255         # TEXTCOLOR: Magic Items: Strong Highlight
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes, top %D3
-	Quality = 20
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Normal
-	SetFontSize 38
-	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D3
-	Quality > 17
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Magic
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D3
-	Quality > 14
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Normal
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D2
-	Quality > 11
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Magic
-	SetFontSize 32
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D2
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Normal
-	SetFontSize 32
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#------------------------------------
 #   [0212] Chromatic recipe items ("RGB Recipe")
 #------------------------------------
 # These items have a RGB link and sell for a chromatic orb each.
@@ -495,7 +441,7 @@ Show #$rgb, small, lvl
 	Width <= 2
 	Height <= 2
 	Rarity < Rare
-	ItemLevel <= 65
+	ItemLevel <= 0
 	SetFontSize 38
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
@@ -505,7 +451,7 @@ Show #$rgb, small, lvl
 	Width <= 1
 	Height <= 3
 	Rarity < Rare
-	ItemLevel <= 65
+	ItemLevel <= 0
 	SetFontSize 38
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
